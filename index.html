@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão background</title>
     <style>
-        body{
-            background-image: linear-gradient(to bottom, black, white);
+       body{
+            background-image: linear-gradient(to top, #FFB6C1, #ADD8E6);
+            background-attachment: fixed;
+
+        } 
+        main.conatiner{
+            position: relative;
+            height: 100vh;
+        }
+
+        main.box{
+            background-image: url(imagem/wallpaper003.jpg);
+            background-position: center center;
+            background-size: contain;
             background-repeat: no-repeat;
+            font-size: 100%;
+            margin: auto;
+            width: 600px;
+            height: 600px;
+            border: solid rgb(0, 0, 0) 3px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    
+    <main class="container">
+      <main class="box"></main>  
+    </main>
 </body>
 </html>
